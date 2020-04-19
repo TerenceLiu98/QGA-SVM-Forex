@@ -16,3 +16,12 @@ Support Vector Machine, a well-known Machine learning algorithm
 ## QGA
 
 QGA: Quantum Genetic Algorithm, instead of binary coding, it uses quantum coding. 
+
+## TO-DO 
+- [ ] GA Function 
+- [ ] SVM Function 
+- [ ] QGA Function
+- [ ] GA-SVM model in FOREX
+- [ ] QGA-SVM model in FOREX
+- [ ] immigrate MATLAB/python code into a MQL4-readable Library 
+
