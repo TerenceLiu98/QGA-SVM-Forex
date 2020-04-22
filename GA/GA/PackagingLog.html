@@ -1,0 +1,141 @@
+<html><meta charset="UTF-8"><pre>
+<font color=blue>mcc -W 'cpplib:GA,all' -T link:lib -d '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing' -v '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/AcrChrom.m' '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/CalAveFitness.m' '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/CalFitness.m' '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/FindBest.m' '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/IfOut.m' '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/Initialize.m' '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/MutChrom.m' '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/PlotModel.m' '/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/ReplaceWorse.m' </font>
+Compiler version: 6.6 (R2018a)
+
+Dependency analysis by REQUIREMENTS.
+
+[Warning: Shared library name "GA" does not begin with "lib".
+On Linux and Mac, the linker expects shared library names to begin with "lib".] 
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/AcrChrom.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/CalAveFitness.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/CalFitness.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/FindBest.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/IfOut.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/Initialize.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/MutChrom.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/PlotModel.m"
+	(Referenced from: "Compiler Command Line").
+Parsing file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/ReplaceWorse.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/readme.txt".
+Generating file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.h".
+Generating file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.cpp".
+Generating file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.exports".
+Generating file "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/v2/generic_interface/readme.txt".
+Executing command: "/Applications/MATLAB_R2018a.app/bin/mbuild"  -client mbuild -O -v -output "GA" -I"/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing" "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.cpp" CMDLINE150=''  CMDLINE200='$LDXX $LDFLAGS $LINKOPTIM $LINKEXPORT $OBJS $CXXLIBS $LINKLIBS -o $EXE' LDEXT='.dylib' LDTYPE='-dynamiclib' LDFLAGS='-arch x86_64 -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET -Wl,-syslibroot,$ISYSROOT $LDTYPE $LINKEXPORT -framework CoreFoundation -install_name "@loader_path/$EXENAME$LDEXT"' -outdir "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing" -nobundle
+Verbose mode is on.
+... Looking for compiler 'Xcode Clang++' ...
+... Looking for environment variable 'DEVELOPER_DIR' ...No.
+... Executing command 'xcode-select -print-path' ...Yes ('/Library/Developer/CommandLineTools').
+... Looking for folder '/Library/Developer/CommandLineTools' ...Yes.
+... Executing command 'which xcrun' ...Yes ('/usr/bin/xcrun').
+... Looking for folder '/usr/bin' ...Yes.
+... Executing command 'defaults read com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense' ...No.
+... Executing command 'defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense' ...Yes ('11.4.1').
+... Executing command '
+agreed=11.4.1 
+ if echo $agreed | grep -E '[\.\"]' >/dev/null; then 
+ lhs=`expr "$agreed" : '\([0-9]*\)[\.].*'` 
+  rhs=`expr "$agreed" : '[0-9]*[\.]\(.*\)$'` 
+ if echo $rhs | grep -E '[\."]' >/dev/null; then 
+ rhs=`expr "$rhs" : '\([0-9]*\)[\.].*'` 
+ fi 
+ if [ $lhs -gt 4 ] || ( [ $lhs -eq 4 ] && [ $rhs -ge 3 ] ); then 
+ echo $agreed 
+ else 
+ exit 1
+ fi 
+ fi' ...Yes ('11.4.1').
+... Executing command 'xcrun -sdk macosx --show-sdk-path' ...Yes ('/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk').
+... Executing command 'xcrun -sdk macosx --show-sdk-version | cut -c1-5' ...Yes ('10.15').
+... Executing command 'clang --version | grep -Eo '[0-9]+\.[0-9]+\.[0-9]'|head -1' ...Yes ('11.0.3').
+Found installed compiler 'Xcode Clang++'.
+Set INCLUDE = /Library/Developer/CommandLineTools/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1;/Library/Developer/CommandLineTools/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/11.0.3/include;/Library/Developer/CommandLineTools/Toolchains/XcodeDefault.xctoolchain/usr/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks;
+Options file details
+-------------------------------------------------------------------
+	Compiler location: /Library/Developer/CommandLineTools
+	Options file: /Users/terencelau/Library/Application Support/MathWorks/MATLAB/R2018a/MBUILD_C++_maci64.xml
+	CMDLINE100 : /usr/bin/xcrun -sdk macosx10.15 clang++ -c -DMATLAB_DEFAULT_RELEASE=R2017b  -DUSE_MEX_CMD   -DUNIX -DX11 -DMACI64 -UMX_COMPAT_SC -I"/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing"  -I"/Applications/MATLAB_R2018a.app/extern/include" -I"/Applications/MATLAB_R2018a.app/extern/include/cpp" -fexceptions -fno-common -arch x86_64 -mmacosx-version-min=10.9 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -std=c++11 -stdlib=libc++ -O2 -fwrapv -DNDEBUG "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.cpp" -o /var/folders/c8/qlnd5fx50dl060wblmhzn3600000gn/T/mex_298870350110370_97790/GA.o
+	CMDLINE200 : /usr/bin/xcrun -sdk macosx10.15 clang++ -arch x86_64 -mmacosx-version-min=10.9 -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -dynamiclib  -framework CoreFoundation -install_name "@loader_path/GA.dylib" -O  /var/folders/c8/qlnd5fx50dl060wblmhzn3600000gn/T/mex_298870350110370_97790/GA.o   -L"/Applications/MATLAB_R2018a.app/runtime/maci64" -L"/Applications/MATLAB_R2018a.app/extern/bin/maci64" -lMatlabDataArray -lMatlabCppSharedLib -lmwmclmcrrt -o "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.dylib"
+	CC : /usr/bin/xcrun -sdk macosx10.15 clang
+	CXX : /usr/bin/xcrun -sdk macosx10.15 clang++
+	DEFINES : -DMATLAB_DEFAULT_RELEASE=R2017b  -DUSE_MEX_CMD   -DUNIX -DX11 -DMACI64 -UMX_COMPAT_SC
+	MATLABMEX : 
+	MACOSX_DEPLOYMENT_TARGET : 10.9
+	CFLAGS : -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+	CXXFLAGS : -fexceptions -fno-common -arch x86_64 -mmacosx-version-min=10.9 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -std=c++11 -stdlib=libc++
+	INCLUDE : -I"/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing"  -I"/Applications/MATLAB_R2018a.app/extern/include" -I"/Applications/MATLAB_R2018a.app/extern/include/cpp"
+	CXXOPTIMFLAGS : -O2 -fwrapv -DNDEBUG
+	CXXDEBUGFLAGS : -g
+	LD : /usr/bin/xcrun -sdk macosx10.15 clang
+	LDXX : /usr/bin/xcrun -sdk macosx10.15 clang++
+	LDFLAGS : -arch x86_64 -mmacosx-version-min=10.9 -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -dynamiclib  -framework CoreFoundation -install_name "@loader_path/GA.dylib"
+	LDBUNDLE : -bundle 
+	LINKEXPORT : 
+	LINKEXPORTVER : 
+	LINKEXPORTCPP : 
+	LINKLIBS : -L"/Applications/MATLAB_R2018a.app/runtime/maci64" -L"/Applications/MATLAB_R2018a.app/extern/bin/maci64" -lMatlabDataArray -lMatlabCppSharedLib -lmwmclmcrrt
+	LDOPTIMFLAGS : -O
+	LDDEBUGFLAGS : -g
+	OBJEXT : .o
+	LDEXT : .dylib
+	SETENV : CC="/usr/bin/xcrun -sdk macosx10.15 clang"
+                CXX="/usr/bin/xcrun -sdk macosx10.15 clang++"
+                CFLAGS="-fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -DMATLAB_DEFAULT_RELEASE=R2017b  -DUSE_MEX_CMD   -DUNIX -DX11 -DMACI64 -UMX_COMPAT_SC"
+                CXXFLAGS="-fexceptions -fno-common -arch x86_64 -mmacosx-version-min=10.9 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -std=c++11 -stdlib=libc++ -DMATLAB_DEFAULT_RELEASE=R2017b  -DUSE_MEX_CMD   -DUNIX -DX11 -DMACI64 -UMX_COMPAT_SC"
+                COPTIMFLAGS="-O2 -fwrapv -DNDEBUG"
+                CXXOPTIMFLAGS="-O2 -fwrapv -DNDEBUG"
+                CDEBUGFLAGS="-g"
+                CXXDEBUGFLAGS="-g"
+                LD="/usr/bin/xcrun -sdk macosx10.15 clang"
+                LDXX="/usr/bin/xcrun -sdk macosx10.15 clang++"
+                LDFLAGS="-arch x86_64 -mmacosx-version-min=10.9 -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -dynamiclib  -framework CoreFoundation -install_name "@loader_path/GA.dylib" -L"/Applications/MATLAB_R2018a.app/runtime/maci64" -L"/Applications/MATLAB_R2018a.app/extern/bin/maci64" -lMatlabDataArray -lMatlabCppSharedLib -lmwmclmcrrt "
+                LDDEBUGFLAGS="-g"
+	DEVELOPER_DIR_CHECK : 
+	XCODE_DIR : /Library/Developer/CommandLineTools
+	XCRUN_DIR : /usr/bin
+	XCODE_AGREED_VERSION : 11.4.1
+	ISYSROOT : /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+	SDKVER : 10.15
+	CLANG_VERSION : 11.0.3
+	MATLABROOT : /Applications/MATLAB_R2018a.app
+	ARCH : maci64
+	CMDLINE150 : 
+	LDTYPE : -dynamiclib
+	SRC : "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.cpp"
+	OBJ : /var/folders/c8/qlnd5fx50dl060wblmhzn3600000gn/T/mex_298870350110370_97790/GA.o
+	OBJS : /var/folders/c8/qlnd5fx50dl060wblmhzn3600000gn/T/mex_298870350110370_97790/GA.o 
+	SRCROOT : /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA
+	DEF : /var/folders/c8/qlnd5fx50dl060wblmhzn3600000gn/T/mex_298870350110370_97790/GA.def
+	EXP : "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.exp"
+	LIB : "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.lib"
+	EXE : "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.dylib"
+	ILK : "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.ilk"
+	MANIFEST : "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.dylib.manifest"
+	TEMPNAME : /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA
+	EXEDIR : /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/
+	EXENAME : GA
+	OPTIM : -O2 -fwrapv -DNDEBUG
+	LINKOPTIM : -O
+-------------------------------------------------------------------
+Building with 'Xcode Clang++'.
+/usr/bin/xcrun -sdk macosx10.15 clang++ -c -DMATLAB_DEFAULT_RELEASE=R2017b  -DUSE_MEX_CMD   -DUNIX -DX11 -DMACI64 -UMX_COMPAT_SC -I"/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing"  -I"/Applications/MATLAB_R2018a.app/extern/include" -I"/Applications/MATLAB_R2018a.app/extern/include/cpp" -fexceptions -fno-common -arch x86_64 -mmacosx-version-min=10.9 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -std=c++11 -stdlib=libc++ -O2 -fwrapv -DNDEBUG "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.cpp" -o /var/folders/c8/qlnd5fx50dl060wblmhzn3600000gn/T/mex_298870350110370_97790/GA.o
+/usr/bin/xcrun -sdk macosx10.15 clang++ -arch x86_64 -mmacosx-version-min=10.9 -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -dynamiclib  -framework CoreFoundation -install_name "@loader_path/GA.dylib" -O  /var/folders/c8/qlnd5fx50dl060wblmhzn3600000gn/T/mex_298870350110370_97790/GA.o   -L"/Applications/MATLAB_R2018a.app/runtime/maci64" -L"/Applications/MATLAB_R2018a.app/extern/bin/maci64" -lMatlabDataArray -lMatlabCppSharedLib -lmwmclmcrrt -o "/Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_testing/GA.dylib"
+<font color=blue>Packaging...</font>
+Creating the bundle...
+Copying /Applications/MATLAB_R2018a.app/toolbox/compiler/maci64/setup.app to /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_redistribution/MyAppInstaller_web.app.
+Copying /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_redistribution/bundle.zip to /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_redistribution/MyAppInstaller_web.app/Contents/Resources/bundle.zip.
+Copying /Applications/MATLAB_R2018a.app/toolbox/compiler/Resources/default_splash.png to /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_redistribution/MyAppInstaller_web.app/Contents/Resources/splash.png.
+Copying /Applications/MATLAB_R2018a.app/toolbox/compiler/Resources/default_icon.icns to /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_redistribution/MyAppInstaller_web.app/Contents/Resources/installer.icns.
+Web based installer created at /Users/terencelau/.nutstore/.nutstore/Year_Four_File/[S2] Quantum Finance/Project/GA/GA/for_redistribution/MyAppInstaller_web.app.
+Packaging complete.
+Elapsed packaging time was: 37 seconds.
+</pre></html>
