@@ -1,6 +1,19 @@
 # py-mt4
 Using Python (3.x) to auto trading with MT4
 
+- [py-mt4](#py-mt4)
+  * [Pre-requisites:](#pre-requisites-)
+  * [Introduction (Reasoning behind the webinar)](#introduction--reasoning-behind-the-webinar-)
+    + [Reasoning behind this webinar:](#reasoning-behind-this-webinar-)
+    + [What is ZeroMQ ? Why use it?](#what-is-zeromq---why-use-it-)
+  * [ZeroMQ Communication Patterns](#zeromq-communication-patterns)
+    + [ZeroMQ: Requrest/Reply](#zeromq--requrest-reply)
+    + [ZeroMQ: PUSH/PULL](#zeromq--push-pull)
+    + [Planning System Architecture](#planning-system-architecture)
+    + [In summary:](#in-summary-)
+- [Machine Environment](#machine-environment)
+- [Installation](#installation)
+
 ## Pre-requisites:
 
 1. Programming experiment in Python/R/MQL
