@@ -81,7 +81,7 @@ We present a technique employing `ZeroMQ` (an Open Source, Asynchronous messagin
 
 1. The server will employ two sockets, REP/PUSH 
 2. Each Client will employ two sockets, REQ/PULL
-
+*Acturally, we use PULL/PUSH on Server and PUSH/PULL on Client*
 
 # Machine Environment 
 - win10 Version 2004
