@@ -92,7 +92,7 @@ We present a technique employing `ZeroMQ` (an Open Source, Asynchronous messagin
 - `cd test`
 - Turn off the anti-virus program, which may interdict the network
 - unzip the `.zip`
-- put the file inside the `include` into your MT4's `include` (same operation to the `Linbrary`)
+- put the file inside the `include` into your MT4's `include` (same operation to the `Library`)
 - pip install pyzmq
 - pip install TA_Lib-0.4.17-cp38-cp38m-win_amd64.whl   * you can find your version in [pythonlibs](https://www.lfd.uci.edu/~gohlke/pythonlibs/)*
 - you can try the `.py` & `.mq4` from the `test` file
