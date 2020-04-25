@@ -9,14 +9,20 @@ class Trader:
         self.strategy = Strategy('H1', 10)
         self.Tickets = []
 
-    def rates(self, symbol):
+    def rates(self, symbol): # require rates: SELL|BUY
         query = "RATES|{}".format(symbol)
-        self.connection.push(query)
+        self.connection.push(query.encode("UTF-8"))
 
-    def data(self, symbol, time_frame):
-        query = "DATA|{}|{}".format(symbol, time_frame)
+    def data(self, symbol, time_frame): 
+        query = "DATA|{}|{}".format(symbol, str(time_frame))
         self.connection.push(query)
+    
+    def get_response(self):
+        pull_msg =  self.connection.pull()
+        print(pull_msg)
+        return(pull_msg)
 
+    # 'TRADE|OPEN|BUYLIMIT|'BTCCHN'|0|50|50|Python-to-MT4'
     def order(self, action, order_type, symbol, tick_id=None):
         query = 'TRADE|{}|{}|{}|0|50|50|Python-to-MT4'.format(action, order_type, symbol)
         if tick_id:
@@ -51,6 +57,7 @@ class Trader:
                 self.Tickets.append(ticket)
         except ValueError:
             pass
+    
 
 
 class Connection:
@@ -60,8 +67,8 @@ class Connection:
         self.pullSocket = self.context.socket(zmq.PULL)
 
     def connect(self, pushPort, pullPort):
-        self.pushSocket.connect("tcp://localhost:{}".format(pushPort))
-        self.pullSocket.connect("tcp://localhost:{}".format(pullPort))
+        self.pushSocket.connect("tcp://192.168.0.108:{}".format(pushPort))
+        self.pullSocket.connect("tcp://192.168.0.108:{}".format(pullPort))
         print("Connected to ports: {} and {}".format(pushPort, pullPort))
 
     def disconnect(self):
@@ -76,7 +83,7 @@ class Connection:
 
     def push(self, msg):
         "Sends a string message."
-        self.pushSocket.send_string(unicode(msg))
+        self.pushSocket.send_string(str(msg))
 
     def pull(self):
         """Tries to retrieve a message.
@@ -85,10 +92,10 @@ class Connection:
         pull = self.pullSocket
         
         try:
-            msg = pull.recv(flags=zmq.NOBLOCK)
+            msg = pull.recv_string(flags=zmq.NOBLOCK)
             return msg
         except zmq.Again:
-            return None
+            return 0
 
 
 def parse(msg, sep='|'):
@@ -105,3 +112,4 @@ def parse(msg, sep='|'):
                 vals.append(val)
     
     return vals
+
