@@ -26,5 +26,5 @@ QGA: Quantum Genetic Algorithm, instead of binary coding, it uses quantum coding
 - [ ] GA-SVM model in FOREX
 - [ ] QGA-SVM model in FOREX
 - [ ] immigrate MATLAB/python code into a MQL4-readable Library 
-
+- [ ] A Enhanced python package for `MetaTrader5`
 

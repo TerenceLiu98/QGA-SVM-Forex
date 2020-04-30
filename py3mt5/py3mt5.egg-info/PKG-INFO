@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: py3mt5
+Version: 0.1.0
+Summary: This is a enhanced python package for mt5 using MetaTrader5
+Home-page: https://github.com/TerenceLiu98/QGA-SVM-Forex
+Author: Terence Lau
+Author-email: t_lau@uicstat.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3

@@ -96,3 +96,7 @@ We present a technique employing `ZeroMQ` (an Open Source, Asynchronous messagin
 - pip install pyzmq
 - pip install TA_Lib-0.4.17-cp38-cp38m-win_amd64.whl   * you can find your version in [pythonlibs](https://www.lfd.uci.edu/~gohlke/pythonlibs/)*
 - you can try the `.py` & `.mq4` from the `test` file
+
+# py3MT5
+
+`python3 setup.py install`  and you can enjoy it. 

@@ -1,0 +1,9 @@
+README.txt
+__init__.py
+py3mt5.py
+setup.py
+py3mt5.egg-info/PKG-INFO
+py3mt5.egg-info/SOURCES.txt
+py3mt5.egg-info/dependency_links.txt
+py3mt5.egg-info/requires.txt
+py3mt5.egg-info/top_level.txt
